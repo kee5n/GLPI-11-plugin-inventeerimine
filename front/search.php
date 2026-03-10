@@ -104,7 +104,7 @@ echo "<h2>Vara inventeerimine</h2>";
 $asset_code = htmlspecialchars($_GET['asset_code'] ?? '');
 
 echo "<form action='$plugin_url' method='get' class='mb-4'>";
-echo "<input type='text' name='asset_code'
+echo "<input type='text' autofocus name='asset_code'
              placeholder='Sisesta kood'
              class='form-control'
              style='width:400px; display:inline-block;'
