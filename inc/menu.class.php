@@ -7,11 +7,10 @@ class PluginInventeerimineMenu extends CommonGLPI {
    }
 
    static function getMenuContent() {
-
-      $menu = [];
-      $menu['title'] = self::getMenuName();
-      $menu['page']  = '/plugins/inventeerimine/front/search.php';
-
-      return $menu;
+      return [
+         'title' => self::getMenuName(),
+         'page'  => '/plugins/inventeerimine/front/search.php',
+         'icon'  => 'fas fa-search'
+      ];
    }
 }

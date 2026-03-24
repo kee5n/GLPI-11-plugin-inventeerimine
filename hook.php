@@ -1,9 +1,8 @@
 <?php
-
 function plugin_inventeerimine_install() {
-   return true;
+    return true;
 }
 
 function plugin_inventeerimine_uninstall() {
-   return true;
+    return true;
 }
