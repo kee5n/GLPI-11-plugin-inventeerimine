@@ -4,7 +4,6 @@ Session::checkLoginUser();
 
 Html::header("Inventeeritud varad raport", $_SERVER['PHP_SELF'], "management", "report");
 
-// Filtri väärtused
 $start_date_str = $_GET['start_date'] ?? date("Y-01-01");
 $end_date_str   = $_GET['end_date'] ?? date("Y-m-d");
 $type_filter    = $_GET['type'] ?? '';
@@ -12,7 +11,7 @@ $type_filter    = $_GET['type'] ?? '';
 $start_date = strtotime($start_date_str);
 $end_date   = strtotime($end_date_str);
 
-// Asset tüübid
+// Varad
 $asset_types = [
     'Computer',
     'Monitor',
@@ -27,7 +26,7 @@ $asset_types = [
 ];
 
 
-// ===== FILTER FORM =====
+// Filtri vorm
 echo "<form method='get' class='mb-4'>";
 
 echo "<label>Alguskuupäev:</label> ";
@@ -51,7 +50,6 @@ echo "<button type='submit' class='btn btn-primary'>Filtreeri</button>";
 echo "</form>";
 
 
-// ===== DATA =====
 $notepad = new Notepad();
 
 $notes = $notepad->find([
@@ -62,24 +60,21 @@ $latest = [];
 
 foreach ($notes as $id => $note) {
 
-    // Tüübi filter
     if (!empty($type_filter) && $note['itemtype'] !== $type_filter) {
         continue;
     }
 
-    // Parsime kuupäeva
+    // Võtame notes komentaari kuupäeva mille on teinud search.php
     if (preg_match('/Inventuur teostatud: (\d{2}\.\d{2}\.\d{4})/', $note['content'], $matches)) {
 
         $note_date = strtotime(str_replace('.', '-', $matches[1]));
 
-        // Kuupäeva filter
         if ($note_date < $start_date || $note_date > $end_date) {
             continue;
         }
 
         $key = $note['itemtype'] . '_' . $note['items_id'];
 
-        // Võtame ainult viimase
         if (!isset($latest[$key]) || $note_date > $latest[$key]['note_date']) {
             $latest[$key] = [
                 'note' => $note,
@@ -90,7 +85,7 @@ foreach ($notes as $id => $note) {
 }
 
 
-// ===== TABLE =====
+// Tabel
 echo "<table class='table table-striped'>";
 echo "<thead><tr>
         <th>Vara nimi</th>

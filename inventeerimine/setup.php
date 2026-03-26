@@ -1,14 +1,10 @@
 <?php
 
-define('INVENTEERIMINE_VERSION', '1.0.0');
+define('Inventeerimine', '1.0.0');
 
-// Include menüü klassid
 include(__DIR__ . '/inc/menu.class.php');
 include(__DIR__ . '/inc/reportmenu.class.php');
 
-/**
- * Versioon
- */
 function plugin_version_inventeerimine() {
     return [
         'name'         => 'Inventeerimine',
@@ -21,29 +17,20 @@ function plugin_version_inventeerimine() {
     ];
 }
 
-/**
- * Init plugina
- */
 function plugin_init_inventeerimine() {
     global $PLUGIN_HOOKS;
 
-    // CSRF turvalisus
     $PLUGIN_HOOKS['csrf_compliant']['inventeerimine'] = true;
 
-    // Registreeri klassid
     Plugin::registerClass('PluginInventeerimineMenu');
     Plugin::registerClass('PluginInventeerimineReportMenu');
 
-    // Menüü hookid
     $PLUGIN_HOOKS['menu_toadd']['inventeerimine'] = [
         'tools'      => 'PluginInventeerimineMenu',
         'management' => 'PluginInventeerimineReportMenu'
     ];
 }
 
-/**
- * Õigused plugina jaoks
- */
 function plugin_inventeerimine_getRights() {
     return [
         [
