@@ -9,8 +9,7 @@ Installation guide
 
 ![alt text](img/Untitled.png)
 
-2.d
-Extract the files after downloading.
+2. Extract the files after downloading.
 
 ![alt text](img/Untitled1.png)
 
