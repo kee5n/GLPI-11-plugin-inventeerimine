@@ -202,7 +202,7 @@ echo "</select>
 </form>";
 
 
-// 🔥 export lingid koos filtriga
+// export lingid koos filtriga
 echo "<div class='card mb-3 mt-3'>
     <div class='card-body d-flex justify-content-end'>
 
