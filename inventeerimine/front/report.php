@@ -135,58 +135,6 @@ echo "</select>
 
 </form>";
 
-<<<<<<< HEAD
-
-// export lingid koos filtriga
-echo "<div class='card mb-3 mt-3'>
-    <div class='card-body d-flex justify-content-end'>
-
-        <div class='btn-group'>
-            <button type='button' class='btn btn-primary dropdown-toggle' data-bs-toggle='dropdown'>
-                Export
-            </button>
-
-            <ul class='dropdown-menu dropdown-menu-end'>
-
-                <li>
-                    <a class='dropdown-item' 
-                       href='?from=$from&to=$to&type=$type_filter&export=csv'>
-                       CSV
-                    </a>
-                </li>
-
-                <li>
-                    <a class='dropdown-item' 
-                       href='?from=$from&to=$to&type=$type_filter&export=xlsx'>
-                       Excel (XLSX)
-                    </a>
-                </li>
-
-                <li>
-                    <a class='dropdown-item' 
-                       href='?from=$from&to=$to&type=$type_filter&export=pdf'>
-                       PDF
-                    </a>
-                </li>
-
-                <li><hr class='dropdown-divider'></li>
-
-                <li>
-                    <a class='dropdown-item' 
-                       href='?from=$from&to=$to&type=$type_filter&print=1' target='_blank'>
-                       Print
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-</div>";
-
-// ================= TABLE =================
-=======
->>>>>>> 0aec5f9 (Export removed, English language added, documentation added)
 echo "<table class='table table-bordered'>
 
 <tr>
