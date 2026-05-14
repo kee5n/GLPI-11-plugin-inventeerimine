@@ -105,7 +105,11 @@ function getInventoryRows($types, $from, $to, $type_filter = '') {
    return $rows;
 }
 
+// ================= HEADER =================
+
 echo "<h2>" . __('Inventory Report', 'inventeerimine') . "</h2>";
+
+// ================= FILTER FORM =================
 
 echo "<form style='margin-bottom: 20px;' method='get'>
 
@@ -135,10 +139,8 @@ echo "</select>
 
 </form>";
 
-<<<<<<< Updated upstream
-=======
 // ================= TABLE =================
->>>>>>> Stashed changes
+
 echo "<table class='table table-bordered'>
 
 <tr>
