@@ -135,6 +135,10 @@ echo "</select>
 
 </form>";
 
+<<<<<<< Updated upstream
+=======
+// ================= TABLE =================
+>>>>>>> Stashed changes
 echo "<table class='table table-bordered'>
 
 <tr>
