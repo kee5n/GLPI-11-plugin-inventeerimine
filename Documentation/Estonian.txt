@@ -1,0 +1,74 @@
+# Inventeerimine Plugin (GLPI 11)
+
+## Ülevaade
+
+**Inventeerimine** on GLPI plugin, mis võimaldab hallata ja inventeerida IT-varasid kiiresti ja mugavalt.
+
+Plugin lisab:
+- varade otsingu inventuuri jaoks
+- automaatse inventuuri kuupäeva salvestamise
+- varade lisamise ja muutmise
+- inventuuri raporti
+- mitmekeelse toe (Estonian / English)
+
+---
+
+## Funktsioonid
+
+### Vara otsing
+Otsi varasid:
+- nime järgi
+- seerianumbri järgi
+- inventarinumbri järgi
+
+---
+
+### Vara inventeerimine
+Võimaldab:
+- muuta vara andmeid
+- salvestada automaatselt inventuuri kuupäeva
+- lisada kasutaja ja asukoht
+
+---
+
+### Uue vara lisamine
+Kui vara ei leita:
+- saad lisada uue seadme
+- määrata kasutaja ja asukoht
+- automaatselt lisatakse inventuuri kirje
+
+---
+
+### Inventuuri raport
+Raport sisaldab:
+- vara tüüp
+- nimi
+- seerianumber
+- kasutaja
+- asukoht
+- inventuuri kuupäev
+
+Filtreerimine:
+- kuupäeva vahemik
+- seadme tüüp
+
+---
+
+## Toetatud seadmed
+
+- Computer
+- Monitor
+- NetworkEquipment
+- Peripheral
+- Phone
+- Printer
+- SoftwareLicense
+- PassiveEquipment
+- Enclosure
+- PDU
+
+---
+
+### Keeled:
+- Eesti keel
+- English

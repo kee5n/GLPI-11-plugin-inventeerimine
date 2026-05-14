@@ -3,13 +3,14 @@
 class PluginInventeerimineReportMenu extends CommonGLPI {
 
    static function getMenuName() {
-      return 'Inventuuri raport';
+      return __('Inventory Report', 'inventeerimine');
    }
 
    static function getMenuContent() {
+
       return [
          'title' => self::getMenuName(),
-         'page'  => '/plugins/inventeerimine/front/report.php',
+         'page'  => Plugin::getWebDir('inventeerimine', false) . '/front/report.php',
          'icon'  => 'fas fa-boxes'
       ];
    }

@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: inventeerimine\n"
+"Language: et_EE\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Inventory"
+msgstr "Inventuur"
+
+msgid "Inventory Report"
+msgstr "Inventuuri raport"
+
+msgid "Asset Inventory"
+msgstr "Vara inventuur"
+
+msgid "Asset and inventory date saved!"
+msgstr "Vara ja inventuuri andmed salvestatud!"
+
+msgid "Inventory completed"
+msgstr "Inventuur teostatud"
+
+msgid "New inventoried asset added"
+msgstr "Uus inventeeritud vara lisatud"
+
+msgid "Nothing found with code"
+msgstr "Koodiga ei leitud ühtegi vastet"
+
+msgid "Search"
+msgstr "Otsi"
+
+msgid "Enter code"
+msgstr "Sisesta kood"
+
+msgid "Filter"
+msgstr "Filtreeri"
+
+msgid "Start"
+msgstr "Algus"
+
+msgid "End"
+msgstr "Lõpp"
+
+msgid "All"
+msgstr "Kõik"
+
+msgid "Name"
+msgstr "Nimi"
+
+msgid "Type"
+msgstr "Tüüp"
+
+msgid "Status"
+msgstr "Olek"
+
+msgid "Serial"
+msgstr "Seerianumber"
+
+msgid "Inventory No."
+msgstr "Inventarinumber"
+
+msgid "User"
+msgstr "Kasutaja"
+
+msgid "Location"
+msgstr "Asukoht"
+
+msgid "Date"
+msgstr "Kuupäev"
+
+msgid "Add Asset"
+msgstr "Lisa vara"
+
+msgid "Add New Asset"
+msgstr "Lisa uus vara"
+
+msgid "Save"
+msgstr "Salvesta"
+
+msgid "Edit"
+msgstr "Muuda"
+
+msgid "Delete"
+msgstr "Kustuta"
+
+msgid "Update"
+msgstr "Uuenda"
+
+msgid "Create"
+msgstr "Loo"

@@ -3,14 +3,15 @@
 class PluginInventeerimineMenu extends CommonGLPI {
 
    static function getMenuName() {
-      return __('Inventeerimine', 'inventeerimine');
+      return __('Inventory', 'inventeerimine');
    }
 
    static function getMenuContent() {
+
       return [
          'title' => self::getMenuName(),
-         'page'  => '/plugins/inventeerimine/front/search.php',
-         'icon'  => 'fas fa-search'
+         'page'  => Plugin::getWebDir('inventeerimine', false) . '/front/search.php',
+         'icon'  => 'fas fa-boxes'
       ];
    }
 }

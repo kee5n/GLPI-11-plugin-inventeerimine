@@ -1,0 +1,74 @@
+# Inventory Plugin for GLPI 11
+
+## Overview
+
+The **Inventory Plugin** is a lightweight GLPI 11 extension designed to simplify IT asset inventory management.
+
+Plugin adds:
+- Asset search for inventory
+- Automatic saving of inventory date
+- Adding and editing assets
+- Inventory report
+- Multilingual support (Estonian / English)
+
+---
+
+## Features
+
+### Asset Search
+Search assets by:
+- Name
+- Serial number
+- Inventory number
+
+---
+
+### Inventory Management
+- Update asset information quickly
+- Automatically save inventory date
+- Assign user and location during inventory
+- Add notes for audit tracking
+
+---
+
+### Add New Assets
+If an asset is not found:
+- Create a new asset directly from the inventory screen
+- Assign user, location, and asset type
+- Automatically register inventory date
+
+---
+
+### Inventory Report
+The report module provides:
+- asset type overview
+- name
+- serial number
+- assigned user
+- location
+- inventory date
+
+Filters available:
+- date range
+- dsset type
+
+---
+
+## Supported Asset Types
+
+- Computer
+- Monitor
+- NetworkEquipment
+- Peripheral
+- Phone
+- Printer
+- SoftwareLicense
+- PassiveEquipment
+- Enclosure
+- PDU
+
+---
+
+### Available languages:
+- Estonian (et_EE)
+- English (default fallback)
